@@ -4,21 +4,31 @@ import "./ResponsiveMenu.scss";
 
 const ResponsiveMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const closeMenu = () => setIsOpen(false);
   return (
     <>
       {isOpen && (
         <ul className="navbar--responsive__list">
+          {/* POSIBLE REFACTORIZACION EN LI A */}
           <li>
-            <a href="#SobreMi">Sobre Mí</a>
+            <a onClick={closeMenu} href="#SobreMi">
+              Sobre Mí
+            </a>
           </li>
           <li>
-            <a href="#Tecnologias">Tecnologias</a>
+            <a onClick={closeMenu} href="#Tecnologias">
+              Tecnologias
+            </a>
           </li>
           <li>
-            <a href="#Proyectos">Proyectos</a>
+            <a onClick={closeMenu} href="#Proyectos">
+              Proyectos
+            </a>
           </li>
           <li>
-            <a href="#Contactame">Contactame</a>
+            <a onClick={closeMenu} href="#Contactame">
+              Contactame
+            </a>
           </li>
         </ul>
       )}
