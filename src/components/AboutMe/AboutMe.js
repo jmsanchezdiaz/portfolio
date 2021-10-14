@@ -1,6 +1,6 @@
 import React from "react";
 import "./AboutMe.scss";
-import Foto from "./FotoLinkedIn.png";
+import Foto from "../../static/projects-imgs/FotoLinkedIn.png";
 
 const AboutMe = () => {
   return (

@@ -1,5 +1,5 @@
-import Google from "../../icons/google-original.svg";
-import Github from "../../icons/github-original.svg";
+import Google from "../../static/icons/google-original.svg";
+import Github from "../../static/icons/github-original.svg";
 import "./Project.scss";
 
 const Project = ({ imgUrl, projectName, repoName, technologiesImgs }) => {

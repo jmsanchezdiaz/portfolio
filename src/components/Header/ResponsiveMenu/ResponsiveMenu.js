@@ -1,5 +1,5 @@
 import { useState } from "react";
-import BarsMenu from "../../../icons/bars-menu.svg";
+import BarsMenu from "../../../static/icons/bars-menu.svg";
 import "./ResponsiveMenu.scss";
 
 const ResponsiveMenu = () => {

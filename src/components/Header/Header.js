@@ -1,5 +1,5 @@
 import "./Header.scss";
-import Logo from "../../projects-imgs/LOGO JM.png";
+import Logo from "../../static/projects-imgs/LOGO JM.png";
 import { useMediaQueryWithWidth } from "../../customHooks/useMediaQueryWithWidth";
 import useScrollY from "../../customHooks/useScrollY";
 import ResponsiveMenu from "./ResponsiveMenu/ResponsiveMenu";

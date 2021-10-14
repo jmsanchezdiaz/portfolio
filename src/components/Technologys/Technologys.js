@@ -1,11 +1,11 @@
 import "./Technologys.scss";
-import HtmlIcon from "../../icons/html5-original.svg";
-import Css3Icon from "../../icons/css3-original.svg";
-import SassIcon from "../../icons/sass-original.svg";
-import JavascriptIcon from "../../icons/javascript-original.svg";
-import TypescriptIcon from "../../icons/typescript-original.svg";
-import ReactJSIcon from "../../icons/react-original.svg";
-import PostgresIcon from "../../icons/postgresql-original.svg";
+import HtmlIcon from "../../static/icons/html5-original.svg";
+import Css3Icon from "../../static/icons/css3-original.svg";
+import SassIcon from "../../static/icons/sass-original.svg";
+import JavascriptIcon from "../../static/icons/javascript-original.svg";
+import TypescriptIcon from "../../static/icons/typescript-original.svg";
+import ReactJSIcon from "../../static/icons/react-original.svg";
+import PostgresIcon from "../../static/icons/postgresql-original.svg";
 
 const Technologys = () => {
   return (

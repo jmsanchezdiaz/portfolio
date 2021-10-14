@@ -1,11 +1,11 @@
 import "./Projects.scss";
-import Gipharg from "../../projects-imgs/GiphargImg.png";
-import Aerolab from "../../projects-imgs/AerolabImg.jpg";
-import Softvision from "../../projects-imgs/SoftvisionImg.png";
-import ReactJS from "../../icons/react-original.svg";
-import Typescript from "../../icons/typescript-original.svg";
-import Javascript from "../../icons/javascript-original.svg";
-import Sass from "../../icons/sass-original.svg";
+import Gipharg from "../../static/projects-imgs/GiphargImg.png";
+import Aerolab from "../../static/projects-imgs/AerolabImg.jpg";
+import Softvision from "../../static/projects-imgs/SoftvisionImg.png";
+import ReactJS from "../../static/icons/react-original.svg";
+import Typescript from "../../static/icons/typescript-original.svg";
+import Javascript from "../../static/icons/javascript-original.svg";
+import Sass from "../../static/icons/sass-original.svg";
 import Project from "../Project/Project";
 
 const Projects = () => {

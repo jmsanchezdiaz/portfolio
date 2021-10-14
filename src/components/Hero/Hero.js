@@ -1,6 +1,6 @@
 import "./Hero.scss";
-import Github from "../../icons/github-original.svg";
-import LinkedIn from "../../icons/linkedin-original.svg";
+import Github from "../../static/icons/github-original.svg";
+import LinkedIn from "../../static/icons/linkedin-original.svg";
 
 import React from "react";
 
