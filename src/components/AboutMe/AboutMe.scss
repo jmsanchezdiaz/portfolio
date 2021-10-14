@@ -1,0 +1,50 @@
+@import "../../variables";
+
+.sobre-mi {
+  width: 100%;
+  margin: 4rem 0;
+  padding: 4rem 0;
+  background: $mainColor;
+  color: $secColor;
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  justify-content: center;
+
+  &__text {
+    align-self: center;
+    max-width: 50%;
+    h2 {
+      display: inline-block;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid $secColor;
+    }
+
+    p {
+      font-weight: lighter;
+      //   font-size: 1.3rem;
+    }
+  }
+
+  &__img-container {
+    height: 15rem;
+
+    img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    & {
+      &__text {
+        text-align: center;
+      }
+
+      &__img-container {
+        display: none;
+      }
+    }
+  }
+}

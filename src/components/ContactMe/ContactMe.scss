@@ -1,0 +1,90 @@
+@import "../../variables";
+
+.contactame {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  color: $mainColor;
+  align-items: center;
+  margin: 5rem 0;
+  gap: 2rem;
+  &__msg {
+    color: $thrColor;
+    max-width: 50%;
+    font-size: 3rem;
+    word-break: break-word;
+  }
+
+  .email {
+    max-width: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    form {
+      width: 100%;
+      h2 {
+        font-size: 2em;
+        border-bottom: 3px solid $mainColor;
+        display: inline-block;
+      }
+
+      label,
+      input,
+      textarea {
+        margin: 0.5rem 0;
+        font-size: 1.2em;
+        width: 100%;
+        display: block;
+        resize: none;
+      }
+    }
+    &_button {
+      background: $mainColor;
+      display: inline-block;
+      padding: 0.5rem 1.5rem;
+      color: $secColor;
+      border: none;
+      border-radius: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 500ms;
+      &:hover {
+        background: lighten($mainColor, 15%);
+      }
+    }
+  }
+
+  @media (max-width: 630px) {
+    & {
+      &__msg {
+        display: none;
+      }
+
+      .email {
+        max-width: 100%;
+
+        width: 100%;
+        form {
+          display: grid;
+          font-size: 25px;
+          h2 {
+            justify-self: start;
+            font-size: 1.5em;
+          }
+          label {
+            font-size: 1em;
+          }
+          input,
+          textarea {
+            width: 100%;
+            font-size: 1.2em;
+          }
+          button {
+            justify-self: center;
+            font-size: 0.7em;
+          }
+        }
+      }
+    }
+  }
+}

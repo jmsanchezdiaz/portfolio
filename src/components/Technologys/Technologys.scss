@@ -1,0 +1,65 @@
+@import "../../variables";
+
+.tecnologias {
+  color: $mainColor;
+  width: 100%;
+  margin: 5rem 0;
+  text-align: center;
+
+  h2 {
+    border-bottom: 3px solid $mainColor;
+    display: inline-block;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  &__list {
+    margin: 5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    place-content: center;
+    li {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      img {
+        display: block;
+        max-width: 8rem;
+        min-height: 8rem;
+        transition: transform 500ms ease;
+      }
+
+      span {
+        opacity: 0;
+        transition: opacity 500ms ease;
+      }
+
+      &:hover {
+        span {
+          opacity: 0.7;
+        }
+
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    & {
+      &__list {
+        li {
+          gap: 0.25rem;
+
+          img {
+            max-width: 5rem;
+            max-height: 5rem;
+          }
+        }
+      }
+    }
+  }
+}
