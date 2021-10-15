@@ -12,6 +12,11 @@
     max-width: 50%;
     font-size: 3rem;
     word-break: break-word;
+
+    &-error {
+      font-size: 3rem;
+      color: #fa2121;
+    }
   }
 
   .email {
@@ -55,8 +60,15 @@
 
   @media (max-width: 630px) {
     & {
+      flex-direction: column;
+
       &__msg {
-        display: none;
+        max-width: 100%;
+        text-align: center;
+
+        &-error {
+          text-align: center;
+        }
       }
 
       .email {
