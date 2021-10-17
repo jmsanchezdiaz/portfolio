@@ -1,6 +1,6 @@
-@import "../../variables";
-
+@import "../../generals";
 .hero {
+  animation: fadeInRight 2s ease;
   color: $mainColor;
   padding: 2rem;
   height: calc(100vh);

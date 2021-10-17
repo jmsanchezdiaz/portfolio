@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Projects from "./components/Projects/Projects";
 import Technologys from "./components/Technologys/Technologys";
+import VisibleElement from "./components/VisibleElement/VisibleElement";
 import "./main.scss";
 
 function App() {
@@ -12,10 +13,10 @@ function App() {
     <div className="portfolio">
       <Header />
       <Hero />
-      <AboutMe />
-      <Technologys />
-      <Projects />
-      <ContactMe />
+      <VisibleElement children={<AboutMe />} />
+      <VisibleElement children={<Technologys />} />
+      <VisibleElement children={<Projects />} />
+      <VisibleElement children={<ContactMe />} />
       <Footer />
     </div>
   );

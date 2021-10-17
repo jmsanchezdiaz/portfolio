@@ -4,7 +4,7 @@ import Foto from "../../static/projects-imgs/FotoLinkedIn.png";
 
 const AboutMe = () => {
   return (
-    <section id="SobreMi" className="sobre-mi">
+    <section id="SobreMi" className="sobre-mi box-item">
       <div className="sobre-mi__text">
         <h2>SOBRE MÍ</h2>
         <p>

@@ -2,17 +2,28 @@ import React from "react";
 import { useForm } from "../../customHooks/useForm";
 
 const Form = ({ sendEmail }) => {
-  const { email_address, email_name, email_message, handleInput, resetForm } =
-    useForm({
-      email_address: "",
-      email_name: "",
-      email_message: "",
-    });
+  const {
+    formValues,
+    email_address,
+    email_name,
+    email_message,
+    handleInput,
+    resetForm,
+  } = useForm({
+    email_address: "",
+    email_name: "",
+    email_message: "",
+  });
 
   const handleSubmit = (e) => {
+    const noEmptyInput = Object.values(formValues).every(
+      (value) => value.length
+    );
     e.preventDefault();
-    sendEmail(e);
-    resetForm();
+    if (noEmptyInput) {
+      sendEmail(e);
+      resetForm();
+    }
   };
 
   return (

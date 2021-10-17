@@ -6,9 +6,9 @@ const Footer = () => {
   return (
     <footer className="footer">
       <span className="footer__copy"> 2021 © Juan Manuel Sanchez Diaz</span>
-      <a rel="noreferrer" href="/portfolio">
-        <img src={Logo} alt="logo-jm" />
-      </a>
+
+      <img onClick={() => window.scrollTo(0, 0)} src={Logo} alt="logo-jm" />
+
       <ul className="footer__links">
         <li>
           <a

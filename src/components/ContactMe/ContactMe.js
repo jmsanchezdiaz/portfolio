@@ -25,7 +25,7 @@ const ContactMe = () => {
   };
 
   return (
-    <main id="Contactame" className="contactame">
+    <section id="Contactame" className="contactame">
       <div className="email">
         <Form sendEmail={sendEmail} />
       </div>
@@ -41,7 +41,7 @@ const ContactMe = () => {
       ) : (
         <h2 className="contactame__msg">ESPERO QUE TRABAJEMOS JUNTOS.</h2>
       )}
-    </main>
+    </section>
   );
 };
 export default ContactMe;

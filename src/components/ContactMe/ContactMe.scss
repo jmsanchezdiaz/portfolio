@@ -1,4 +1,4 @@
-@import "../../variables";
+@import "../../generals";
 
 .contactame {
   width: 100%;
@@ -7,7 +7,9 @@
   color: $mainColor;
   align-items: center;
   gap: 2rem;
+
   &__msg {
+    animation: fadeInLeft 1s ease;
     color: $thrColor;
     max-width: 50%;
     font-size: 3rem;
@@ -88,7 +90,7 @@
           input,
           textarea {
             width: 100%;
-            font-size: 1.2em;
+            font-size: 0.8em;
           }
           button {
             justify-self: center;
