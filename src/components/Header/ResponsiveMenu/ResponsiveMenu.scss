@@ -27,11 +27,11 @@
       color: $secColor;
       display: inline-block;
     }
+  }
 
-    @media screen and (max-width: 630px) {
-      & {
-        display: flex;
-      }
+  @media screen and (max-width: 630px) {
+    & {
+      display: flex;
     }
   }
 }
