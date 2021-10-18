@@ -42,6 +42,17 @@ header {
       cursor: pointer;
       color: $mainColor;
       min-width: 3rem;
+      display: none;
+    }
+
+    @media screen and (max-width: 630px) {
+      &__list {
+        display: none;
+      }
+
+      &__bars {
+        display: block;
+      }
     }
   }
 }

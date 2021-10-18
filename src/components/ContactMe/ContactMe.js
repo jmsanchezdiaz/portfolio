@@ -32,14 +32,14 @@ const ContactMe = () => {
 
       {wasSend ? (
         <h2 className="contactame__msg">
-          MENSAJE ENVIADO, PRONTO TE RESPONDERE.
+          MENSAJE ENVIADO, PRONTO TE RESPONDERE. 🧾
         </h2>
       ) : wasError ? (
         <h2 className="contactame__msg-error">
-          HA OCURRIDO UN ERROR, VUELVA A INTENTAR.
+          HA OCURRIDO UN ERROR, VUELVA A INTENTAR. ❌
         </h2>
       ) : (
-        <h2 className="contactame__msg">ESPERO QUE TRABAJEMOS JUNTOS.</h2>
+        <h2 className="contactame__msg">ESPERO QUE TRABAJEMOS JUNTOS. ✋</h2>
       )}
     </section>
   );

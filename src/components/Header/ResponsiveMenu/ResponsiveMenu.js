@@ -9,7 +9,6 @@ const ResponsiveMenu = () => {
     <>
       {isOpen && (
         <ul className="navbar--responsive__list">
-          {/* POSIBLE REFACTORIZACION EN LI A */}
           <li>
             <a onClick={closeMenu} href="#SobreMi">
               Sobre Mí

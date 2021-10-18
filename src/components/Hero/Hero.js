@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <main className="hero">
       <div className="hero__text">
-        <h1>Bienvenido a mi portfolio!</h1>
+        <h1>Bienvenido a mi portfolio! </h1>
         <h3>Mi nombre es Juan Manuel Sanchez Diaz</h3>
         <h3>Soy un Desarollador Front End.</h3>
         <div className="hero__icons">

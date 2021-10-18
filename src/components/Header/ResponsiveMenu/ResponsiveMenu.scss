@@ -6,7 +6,6 @@
   background-color: $mainColor;
   width: 100%;
   left: 0;
-  display: flex;
   flex-direction: column;
   font-size: 2rem;
   align-items: center;
@@ -27,6 +26,12 @@
       text-decoration: none;
       color: $secColor;
       display: inline-block;
+    }
+
+    @media screen and (max-width: 630px) {
+      & {
+        display: flex;
+      }
     }
   }
 }
