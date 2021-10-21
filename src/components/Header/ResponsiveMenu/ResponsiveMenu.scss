@@ -3,15 +3,18 @@
 .navbar--responsive__list {
   position: absolute;
   top: 100%;
-  background-color: $mainColor;
+  background-color: $bkgColor;
   width: 100%;
   left: 0;
+  display: flex;
   flex-direction: column;
   font-size: 2rem;
   align-items: center;
   justify-content: space-evenly;
   gap: 1rem;
   z-index: 1;
+  clip-path: "polygon(0 0, 100% 0, 100% 0, 0 0)";
+  transition: clip-path 1s;
 
   li {
     list-style: none;
@@ -29,9 +32,8 @@
     }
   }
 
-  @media screen and (max-width: 630px) {
-    & {
-      display: flex;
-    }
-  }
+  // @media screen and (max-width: 630px) {
+  //   & {
+  //   }
+  // }
 }

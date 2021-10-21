@@ -27,6 +27,7 @@ const Project = ({ imgUrl, projectName, repoName, technologiesImgs }) => {
             href={"https://github.com/jmsanchezdiaz/" + repoName.toLowerCase()}
           >
             <img className="icon" src={Github} alt="github-icon" />
+            <span>Repositorio</span>
           </a>
           <a
             rel="noreferrer"
@@ -34,6 +35,7 @@ const Project = ({ imgUrl, projectName, repoName, technologiesImgs }) => {
             href={"https://jmsanchezdiaz.github.io/" + repoName.toLowerCase()}
           >
             <img className="icon" src={Google} alt="github-icon" />
+            <span>Sitio Web</span>
           </a>
         </div>
       </div>

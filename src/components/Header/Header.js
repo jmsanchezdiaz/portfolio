@@ -27,7 +27,6 @@ const Header = () => {
     >
       <img src={Logo} alt="logo" />
       <nav className="navbar">
-        <ResponsiveMenu />
         <ul className="navbar__list">
           <li>
             <a href="#SobreMi">Sobre Mí</a>
@@ -42,6 +41,7 @@ const Header = () => {
             <a href="#Contactame">Contactame</a>
           </li>
         </ul>
+        <ResponsiveMenu />
       </nav>
     </header>
   );
