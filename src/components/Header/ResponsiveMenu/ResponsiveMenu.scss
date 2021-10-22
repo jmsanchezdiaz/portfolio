@@ -13,7 +13,7 @@
   justify-content: space-evenly;
   gap: 1rem;
   z-index: 1;
-  clip-path: "polygon(0 0, 100% 0, 100% 0, 0 0)";
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   transition: clip-path 1s;
 
   li {
@@ -31,9 +31,4 @@
       display: inline-block;
     }
   }
-
-  // @media screen and (max-width: 630px) {
-  //   & {
-  //   }
-  // }
 }

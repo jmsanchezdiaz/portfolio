@@ -6,7 +6,11 @@ const useElementOnScreen = (options) => {
 
   const callback = (entries) => {
     const [entry] = entries;
-    if (entry.isIntersecting) setIsVisible(entry.isIntersecting);
+    if (entry.isIntersecting) {
+      setIsVisible(entry.isIntersecting);
+
+      console.log(entry.target);
+    }
   };
 
   useEffect(() => {

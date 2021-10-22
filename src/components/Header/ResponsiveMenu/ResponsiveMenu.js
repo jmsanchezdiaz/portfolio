@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BarsMenu from "../../../static/icons/bars-menu.svg";
 import "./ResponsiveMenu.scss";
 
@@ -6,12 +6,27 @@ const ResponsiveMenu = () => {
   const open = "polygon(0 0, 100% 0, 100% 100%, 0% 100%)";
   const closed = "polygon(0 0, 100% 0, 100% 0, 0 0)";
   const [isOpen, setIsOpen] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(false);
   const closeMenu = () => setIsOpen(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 630) setIsMobileView(true);
+      else setIsMobileView(false);
+      setIsOpen(false);
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <ul
         style={{
-          clipPath: isOpen ? open : closed,
+          clipPath: isOpen && isMobileView ? open : closed,
         }}
         className="navbar--responsive__list"
       >
