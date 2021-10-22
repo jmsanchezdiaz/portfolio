@@ -1,5 +1,3 @@
-import Google from "../../static/icons/google-original.svg";
-import Github from "../../static/icons/github-original.svg";
 import "./Project.scss";
 
 const Project = ({ imgUrl, projectName, repoName, technologiesImgs }) => {
@@ -26,16 +24,14 @@ const Project = ({ imgUrl, projectName, repoName, technologiesImgs }) => {
             target="_blank"
             href={"https://github.com/jmsanchezdiaz/" + repoName.toLowerCase()}
           >
-            <img className="icon" src={Github} alt="github-icon" />
-            <span>Repositorio</span>
+            Repositorio
           </a>
           <a
             rel="noreferrer"
             target="_blank"
             href={"https://jmsanchezdiaz.github.io/" + repoName.toLowerCase()}
           >
-            <img className="icon" src={Google} alt="github-icon" />
-            <span>Sitio Web</span>
+            Sitio Web
           </a>
         </div>
       </div>

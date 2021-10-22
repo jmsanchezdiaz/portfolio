@@ -25,26 +25,22 @@
   }
 
   &-links {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1rem;
     a {
       text-decoration: none;
-      cursor: pointer;
       background-color: $secColor;
       padding: 0.5rem;
-      border-radius: 1rem;
-      .icon {
-        max-width: 2.5rem;
-        min-width: 1.5rem;
-      }
+      border-radius: 5px;
 
-      span {
-        color: $mainColor;
-        font-weight: bold;
-        display: block;
+      color: $mainColor;
+      font-weight: bold;
+
+      &:hover {
+        background: $mainColor;
+        color: $secColor;
       }
     }
   }
@@ -69,12 +65,18 @@
     top: 0;
     left: 0;
     background-color: #2e2e2ead;
-    transition: all 500ms 100ms;
+    transition: all 500ms;
   }
 
   @media screen and (max-width: 630px) {
     .icon {
-      max-width: 10%;
+      max-width: 2rem;
+    }
+
+    &-links {
+      a {
+        font-size: 13px;
+      }
     }
 
     &-hover {
