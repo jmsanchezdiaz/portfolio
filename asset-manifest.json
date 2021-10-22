@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.2feb83de.chunk.css",
-    "main.js": "/portfolio/static/js/main.4d8ba79a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.4d8ba79a.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.37478986.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.37478986.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
     "static/js/2.d46900b3.chunk.js": "/portfolio/static/js/2.d46900b3.chunk.js",
@@ -13,7 +13,7 @@
     "static/media/AerolabImg.aeaadf2e.jpg": "/portfolio/static/media/AerolabImg.aeaadf2e.jpg",
     "static/media/FotoLinkedIn.0e5d440c.png": "/portfolio/static/media/FotoLinkedIn.0e5d440c.png",
     "static/media/GiphargImg.8b8d62a9.png": "/portfolio/static/media/GiphargImg.8b8d62a9.png",
-    "static/media/JMSANCHEZDIAZCV.3d142c08.pdf": "/portfolio/static/media/JMSANCHEZDIAZCV.3d142c08.pdf",
+    "static/media/JMSANCHEZDIAZCV.c0f4b22d.pdf": "/portfolio/static/media/JMSANCHEZDIAZCV.c0f4b22d.pdf",
     "static/media/Note-app.ac742f38.png": "/portfolio/static/media/Note-app.ac742f38.png",
     "static/media/SoftvisionImg.1dae7edd.png": "/portfolio/static/media/SoftvisionImg.1dae7edd.png",
     "static/media/bars-menu.9dbc5a3a.svg": "/portfolio/static/media/bars-menu.9dbc5a3a.svg",
@@ -31,6 +31,6 @@
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.d46900b3.chunk.js",
     "static/css/main.2feb83de.chunk.css",
-    "static/js/main.4d8ba79a.chunk.js"
+    "static/js/main.37478986.chunk.js"
   ]
 }
