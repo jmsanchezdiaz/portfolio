@@ -15,12 +15,13 @@ const ResponsiveMenu = () => {
       else setIsMobileView(false);
       setIsOpen(false);
     };
-    window.addEventListener("resize", handleResize);
     handleResize();
+
+    window.addEventListener("resize", handleResize);
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  }, []);
+  }, [isMobileView]);
 
   return (
     <>
