@@ -26,7 +26,7 @@ const ResponsiveMenu = () => {
     <>
       <ul
         style={{
-          clipPath: isOpen && isMobileView ? open : closed,
+          clipPath: isOpen ? open : closed,
         }}
         className="navbar--responsive__list"
       >
@@ -52,12 +52,14 @@ const ResponsiveMenu = () => {
         </li>
       </ul>
 
-      <img
-        onClick={() => setIsOpen((prevState) => !prevState)}
-        className="navbar__bars"
-        src={BarsMenu}
-        alt="bars-menu"
-      />
+      {isMobileView && (
+        <img
+          onClick={() => setIsOpen((prevState) => !prevState)}
+          className="navbar__bars"
+          src={BarsMenu}
+          alt="bars-menu"
+        />
+      )}
     </>
   );
 };
