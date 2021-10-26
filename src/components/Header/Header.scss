@@ -13,9 +13,12 @@ header {
   background: #fff;
   z-index: 9;
 
-  img {
-    object-fit: cover;
+  svg {
     max-width: 7.5rem;
+
+    path {
+      fill: $mainColor;
+    }
   }
 
   .navbar {
