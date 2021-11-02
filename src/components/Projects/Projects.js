@@ -2,7 +2,7 @@ import "./Projects.scss";
 import Gipharg from "../../static/projects-imgs/GiphargImg.png";
 import Aerolab from "../../static/projects-imgs/AerolabImg.jpg";
 import Softvision from "../../static/projects-imgs/SoftvisionImg.png";
-import NoteApp from "../../static/projects-imgs/Note-app.png";
+import RestApp from "../../static/projects-imgs/RestCountriesApp.jpg";
 import ReactJS from "../../static/icons/react-original.svg";
 import Typescript from "../../static/icons/typescript-original.svg";
 import Javascript from "../../static/icons/javascript-original.svg";
@@ -33,10 +33,10 @@ const Projects = () => {
           technologiesImgs={[ReactJS, Typescript, Sass]}
         />
         <Project
-          imgUrl={NoteApp}
-          projectName="NOTE APP"
-          repoName="note-app"
-          technologiesImgs={[ReactJS, Typescript, Sass]}
+          imgUrl={RestApp}
+          projectName="REST COUNTRIES APP"
+          repoName="rest-countries-app"
+          technologiesImgs={[ReactJS, Sass]}
         />
       </div>
     </section>
