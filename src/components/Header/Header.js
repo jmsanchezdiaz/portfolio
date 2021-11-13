@@ -14,6 +14,7 @@ const Header = () => {
       setIsOpen(false);
     };
 
+    handleResize();
     window.addEventListener("load", handleResize);
     window.addEventListener("resize", handleResize);
 
@@ -108,12 +109,10 @@ const Header = () => {
           </a>
         </li>
       </ul>
-      <img
-        onClick={openMenu}
-        src={BarsMenu}
-        alt="bars-icon"
-        className="navbar__bars"
-      />
+
+      <figure onClick={openMenu}>
+        <img src={BarsMenu} alt="bars-icon" className="navbar__bars" />
+      </figure>
     </header>
   );
 };
