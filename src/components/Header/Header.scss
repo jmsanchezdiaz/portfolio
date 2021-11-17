@@ -74,18 +74,21 @@ header {
       }
     }
 
-    &__bars {
-      cursor: pointer;
-      color: $mainColor;
-      min-width: 3rem;
+    figure {
       display: none;
+
+      &__bars {
+        cursor: pointer;
+        color: $mainColor;
+        min-width: 3rem;
+      }
     }
 
     @media screen and (max-width: 630px) {
       &__list {
         display: none;
       }
-      &__bars {
+      figure {
         display: block;
       }
     }
