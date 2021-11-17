@@ -73,24 +73,24 @@ header {
         }
       }
     }
+  }
 
-    figure {
-      display: none;
+  figure {
+    display: none;
 
-      &__bars {
-        cursor: pointer;
-        color: $mainColor;
-        min-width: 3rem;
-      }
+    .navbar__bars {
+      cursor: pointer;
+      color: $mainColor;
+      min-width: 3rem;
     }
+  }
 
-    @media screen and (max-width: 630px) {
-      &__list {
-        display: none;
-      }
-      figure {
-        display: block;
-      }
+  @media screen and (max-width: 630px) {
+    .navbar__list {
+      display: none;
+    }
+    figure {
+      display: block;
     }
   }
 }
