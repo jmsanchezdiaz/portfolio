@@ -1,7 +1,10 @@
-import React from "react";
-import { useForm } from "../../customHooks/useForm";
+import React, { useContext } from 'react';
+import { colors } from '../../colors';
+import { DarkModeContext } from '../../Context/DarkModeContext';
+import { useForm } from '../../customHooks/useForm';
 
 const Form = ({ sendEmail }) => {
+  const { isDarkModeOn } = useContext(DarkModeContext);
   const {
     formValues,
     email_address,
@@ -10,9 +13,9 @@ const Form = ({ sendEmail }) => {
     handleInput,
     resetForm,
   } = useForm({
-    email_address: "",
-    email_name: "",
-    email_message: "",
+    email_address: '',
+    email_name: '',
+    email_message: '',
   });
 
   const handleSubmit = (e) => {
@@ -31,6 +34,14 @@ const Form = ({ sendEmail }) => {
       <h2>CONTACTAME</h2>
       <label htmlFor="email_address">Dirección de Correo:</label>
       <input
+        style={{
+          backgroundColor: isDarkModeOn ? colors.moonBkgColor : '#fff',
+          border: '2px solid',
+          borderColor: isDarkModeOn
+            ? colors.moonMainColor
+            : colors.sunMainColor,
+          color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor,
+        }}
         required
         value={email_address}
         onChange={handleInput}
@@ -40,6 +51,14 @@ const Form = ({ sendEmail }) => {
       />
       <label htmlFor="email_name">Nombre:</label>
       <input
+        style={{
+          backgroundColor: isDarkModeOn ? colors.moonBkgColor : '#fff',
+          border: '2px solid',
+          borderColor: isDarkModeOn
+            ? colors.moonMainColor
+            : colors.sunMainColor,
+          color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor,
+        }}
         required
         value={email_name}
         onChange={handleInput}
@@ -49,6 +68,14 @@ const Form = ({ sendEmail }) => {
       />
       <label htmlFor="email_message">Mensaje:</label>
       <textarea
+        style={{
+          backgroundColor: isDarkModeOn ? colors.moonBkgColor : '#fff',
+          border: '2px solid',
+          borderColor: isDarkModeOn
+            ? colors.moonMainColor
+            : colors.sunMainColor,
+          color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor,
+        }}
         required
         value={email_message}
         onChange={handleInput}
@@ -57,7 +84,17 @@ const Form = ({ sendEmail }) => {
         cols="30"
         rows="10"
       ></textarea>
-      <button className="email_button">ENVIAR</button>
+      <button
+        style={{
+          color: isDarkModeOn ? colors.moonMainColor : '#FFF',
+          backgroundColor: isDarkModeOn
+            ? colors.moonBkgColor
+            : colors.sunMainColor,
+        }}
+        className="email_button"
+      >
+        ENVIAR
+      </button>
     </form>
   );
 };
