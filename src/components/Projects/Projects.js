@@ -1,17 +1,31 @@
-import "./Projects.scss";
-import Gipharg from "../../static/projects-imgs/GiphargImg.png";
-import Aerolab from "../../static/projects-imgs/AerolabImg.jpg";
-import Softvision from "../../static/projects-imgs/SoftvisionImg.png";
-import RestApp from "../../static/projects-imgs/RestCountriesApp.jpg";
-import ReactJS from "../../static/icons/react-original.svg";
-import Typescript from "../../static/icons/typescript-original.svg";
-import Javascript from "../../static/icons/javascript-original.svg";
-import Sass from "../../static/icons/sass-original.svg";
-import Project from "../Project/Project";
+import './Projects.scss';
+import Gipharg from '../../static/projects-imgs/GiphargImg.png';
+import Aerolab from '../../static/projects-imgs/AerolabImg.jpg';
+import Softvision from '../../static/projects-imgs/SoftvisionImg.png';
+import RestApp from '../../static/projects-imgs/RestCountriesApp.jpg';
+import ReactJS from '../../static/icons/react-original.svg';
+import Typescript from '../../static/icons/typescript-original.svg';
+import Javascript from '../../static/icons/javascript-original.svg';
+import Sass from '../../static/icons/sass-original.svg';
+import Project from '../Project/Project';
+import { useContext } from 'react';
+import { DarkModeContext } from '../../Context/DarkModeContext';
+import { colors } from '../../colors';
 
 const Projects = () => {
+  const { isDarkModeOn } = useContext(DarkModeContext);
+
   return (
-    <section id="Proyectos" className="proyectos">
+    <section
+      style={{
+        color: isDarkModeOn ? colors.moonMainColor : '#fff',
+        backgroundColor: isDarkModeOn
+          ? colors.moonBkgColor
+          : colors.sunMainColor,
+      }}
+      id="Proyectos"
+      className="proyectos"
+    >
       <h2>MIS PROYECTOS</h2>
       <div className="proyectos__list">
         <Project

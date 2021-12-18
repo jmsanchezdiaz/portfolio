@@ -1,15 +1,26 @@
-import "./Technologys.scss";
-import HtmlIcon from "../../static/icons/html5-original.svg";
-import Css3Icon from "../../static/icons/css3-original.svg";
-import SassIcon from "../../static/icons/sass-original.svg";
-import JavascriptIcon from "../../static/icons/javascript-original.svg";
-import TypescriptIcon from "../../static/icons/typescript-original.svg";
-import ReactJSIcon from "../../static/icons/react-original.svg";
-import PostgresIcon from "../../static/icons/postgresql-original.svg";
+import './Technologys.scss';
+import HtmlIcon from '../../static/icons/html5-original.svg';
+import Css3Icon from '../../static/icons/css3-original.svg';
+import SassIcon from '../../static/icons/sass-original.svg';
+import JavascriptIcon from '../../static/icons/javascript-original.svg';
+import TypescriptIcon from '../../static/icons/typescript-original.svg';
+import ReactJSIcon from '../../static/icons/react-original.svg';
+import PostgresIcon from '../../static/icons/postgresql-original.svg';
+import { useContext } from 'react';
+import { DarkModeContext } from '../../Context/DarkModeContext';
+import { colors } from '../../colors';
 
 const Technologys = () => {
+  const { isDarkModeOn } = useContext(DarkModeContext);
   return (
-    <section id="Tecnologias" className="tecnologias">
+    <section
+      style={{
+        color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor,
+        backgroundColor: isDarkModeOn ? colors.sunMainColor : '#fff',
+      }}
+      id="Tecnologias"
+      className="tecnologias"
+    >
       <h2>MI CONJUNTO DE TECNOLOGIAS</h2>
       <ul className="tecnologias__list">
         <li>

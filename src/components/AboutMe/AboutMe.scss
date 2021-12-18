@@ -1,10 +1,9 @@
-@import "../../generals";
+@import '../../generals';
 
 .sobre-mi {
   width: 100%;
-  margin: 4rem 0;
   padding: 4rem 0;
-  background: $mainColor;
+
   color: $secColor;
   display: flex;
   gap: 1rem;
@@ -17,12 +16,11 @@
     h2 {
       display: inline-block;
       margin-bottom: 1rem;
-      border-bottom: 3px solid $secColor;
+      border-bottom: 3px solid;
     }
 
     p {
       font-weight: lighter;
-      //   font-size: 1.3rem;
     }
   }
 

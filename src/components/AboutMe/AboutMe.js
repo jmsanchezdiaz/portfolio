@@ -1,12 +1,27 @@
-import React from "react";
-import "./AboutMe.scss";
-import Foto from "../../static/projects-imgs/FotoLinkedIn.jpg";
+import React, { useContext } from 'react';
+import './AboutMe.scss';
+import Foto from '../../static/projects-imgs/FotoLinkedIn.jpg';
+import { DarkModeContext } from '../../Context/DarkModeContext';
+import { colors } from '../../colors';
 
 const AboutMe = () => {
+  const { isDarkModeOn } = useContext(DarkModeContext);
   return (
-    <section id="SobreMi" className="sobre-mi box-item">
+    <section
+      style={{
+        background: isDarkModeOn ? colors.moonBkgColor : colors.sunMainColor,
+      }}
+      id="SobreMi"
+      className="sobre-mi box-item"
+    >
       <div className="sobre-mi__text">
-        <h2>SOBRE MÍ</h2>
+        <h2
+          style={{
+            color: isDarkModeOn ? colors.moonMainColor : '#fff',
+          }}
+        >
+          SOBRE MÍ
+        </h2>
         <p>
           Soy un estudiante de Licenciatura en Informática en la Universidad
           Nacional de Quilmes, actualmente me encuentro en el area del
