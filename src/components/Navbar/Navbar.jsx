@@ -4,57 +4,46 @@ import './Navbar.scss';
 
 const Navbar = ({ closeMenu, isMobileView, isOpen }) => {
   const { isDarkModeOn, colors } = useSpreadContext();
-  const correspondingStyle = isMobileView
-    ? {
-        clipPath: isOpen
-          ? ' polygon(0 0, 100% 0, 100% 100%, 0 100%)'
-          : 'polygon(0 0, 100% 0, 100% 0, 0 0)',
-      }
-    : { clipPath: 'none' };
+  const correspondingStyle = {
+    clipPath: !isMobileView
+      ? 'none'
+      : isOpen
+      ? ' polygon(0 0, 100% 0, 100% 100%, 0 100%)'
+      : 'polygon(0 0, 100% 0, 100% 0, 0 0)',
+  };
+
+  const correspondingAnchorStyle = {
+    color: isDarkModeOn
+      ? colors.moonMainColor
+      : !isMobileView
+      ? colors.sunMainColor
+      : '#fff',
+  };
 
   return (
     <nav className="navbar">
       <ul
+        onClick={closeMenu}
         style={correspondingStyle}
         className={isMobileView ? 'navbar__list--responsive' : 'navbar__list'}
       >
-        <li onClick={closeMenu}>
-          <a
-            style={{
-              color: isDarkModeOn ? colors.moonMainColor : '#fff',
-            }}
-            href="#SobreMi"
-          >
+        <li>
+          <a style={correspondingAnchorStyle} href="#SobreMi">
             Sobre Mí
           </a>
         </li>
-        <li onClick={closeMenu}>
-          <a
-            style={{
-              color: isDarkModeOn ? colors.moonMainColor : '#fff',
-            }}
-            href="#Tecnologias"
-          >
+        <li>
+          <a style={correspondingAnchorStyle} href="#Tecnologias">
             Tecnologias
           </a>
         </li>
-        <li onClick={closeMenu}>
-          <a
-            style={{
-              color: isDarkModeOn ? colors.moonMainColor : '#fff',
-            }}
-            href="#Proyectos"
-          >
+        <li>
+          <a style={correspondingAnchorStyle} href="#Proyectos">
             Proyectos
           </a>
         </li>
-        <li onClick={closeMenu}>
-          <a
-            style={{
-              color: isDarkModeOn ? colors.moonMainColor : '#fff',
-            }}
-            href="#Contactame"
-          >
+        <li>
+          <a style={correspondingAnchorStyle} href="#Contactame">
             Contactame
           </a>
         </li>
