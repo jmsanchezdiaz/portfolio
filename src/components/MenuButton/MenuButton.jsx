@@ -3,7 +3,7 @@ import './MenuButton.scss';
 
 const MenuButton = ({ openMenu, isDarkModeOn, colors }) => {
   return (
-    <figure onClick={openMenu}>
+    <figure className="menu-button" onClick={openMenu}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"

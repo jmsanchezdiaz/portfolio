@@ -1,4 +1,4 @@
-figure {
+.menu-button {
   display: none;
 
   svg {
@@ -8,7 +8,7 @@ figure {
 }
 
 @media screen and (max-width: 630px) {
-  figure {
+  .menu-button {
     display: block;
   }
 }
