@@ -1,7 +1,6 @@
 @import '../../generals';
 
 header {
-  color: $mainColor;
   font-weight: bold;
   display: flex;
   width: 100%;
@@ -10,87 +9,15 @@ header {
   padding: 0 2rem;
   max-height: 5rem;
   position: fixed;
-  background: #fff;
   z-index: 9;
 
   svg {
     max-width: 7.5rem;
-
-    path {
-      fill: $mainColor;
-    }
   }
 
-  .navbar {
-    &__list {
-      height: 100%;
-      display: flex;
-      gap: 2rem;
-      align-items: center;
-      li {
-        list-style: none;
-
-        a {
-          text-decoration: none;
-          color: $mainColor;
-
-          &:hover {
-            border-bottom: 2px solid;
-          }
-        }
-      }
-
-      &--responsive {
-        position: absolute;
-        top: 100%;
-        background-color: $bkgColor;
-        width: 100%;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        font-size: 2rem;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 1rem;
-        z-index: 1;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        transition: clip-path 1s;
-
-        li {
-          list-style: none;
-          width: 100%;
-
-          &:hover {
-            background: darken($mainColor, 15%);
-          }
-          a {
-            padding: 1rem;
-            width: 100%;
-            text-decoration: none;
-            color: $secColor;
-            display: inline-block;
-          }
-        }
-      }
-    }
-  }
-
-  figure {
-    display: none;
-
-    .navbar__bars {
-      cursor: pointer;
-      color: $mainColor;
-      min-width: 3rem;
-    }
-  }
-
-  @media screen and (max-width: 630px) {
-    .navbar__list {
-      display: none;
-    }
-    figure {
-      display: block;
-    }
+  .icon-group {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
   }
 }

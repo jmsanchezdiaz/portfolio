@@ -1,0 +1,56 @@
+@import '../../generals';
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  &__list {
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    li {
+      list-style: none;
+      min-width: max-content;
+      a {
+        text-decoration: none;
+
+        &:hover {
+          border-bottom: 2px solid;
+        }
+      }
+    }
+
+    &--responsive {
+      position: absolute;
+      top: 100%;
+      background-color: $bkgColor;
+      width: 100%;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      font-size: 2rem;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 1rem;
+      z-index: 1;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+      transition: clip-path 1s;
+
+      li {
+        list-style: none;
+        width: 100%;
+
+        &:hover {
+          background: darken($mainColor, 15%);
+        }
+        a {
+          padding: 1rem;
+          width: 100%;
+          text-decoration: none;
+          color: $secColor;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

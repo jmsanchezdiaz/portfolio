@@ -1,10 +1,10 @@
-import { useElementOnScreen } from "../../customHooks/useElementOnScreen";
+import { useElementOnScreen } from '../../customHooks/useElementOnScreen';
 
 const VisibleElement = ({
   children,
   options = null,
-  speed = "2500ms",
-  mode = "",
+  speed = '2500ms',
+  mode = '',
 }) => {
   const { containerRef, isVisible } = useElementOnScreen(options);
 

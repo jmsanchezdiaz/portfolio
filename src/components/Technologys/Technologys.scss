@@ -1,13 +1,12 @@
-@import "../../generals";
+@import '../../generals';
 
 .tecnologias {
-  color: $mainColor;
   width: 100%;
   padding: 5rem 0;
   text-align: center;
 
   h2 {
-    border-bottom: 3px solid $mainColor;
+    border-bottom: 3px solid;
     display: inline-block;
     text-align: center;
     font-size: 2rem;

@@ -1,24 +1,17 @@
-@import "../../generals";
+@import '../../generals';
 
 .footer {
   width: 100%;
-  background: $mainColor;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5em 1rem;
-  color: $secColor;
 
   svg {
     max-height: 5rem;
     max-width: 5rem;
-    background: $secColor;
     border-radius: 100%;
     cursor: pointer;
-
-    path {
-      fill: $mainColor;
-    }
   }
 
   ul {
@@ -31,12 +24,11 @@
       border-bottom: 2px solid transparent;
 
       &:hover {
-        border-color: $secColor;
+        border-color: inherit;
       }
 
       a {
         text-decoration: none;
-        color: $secColor;
       }
     }
   }

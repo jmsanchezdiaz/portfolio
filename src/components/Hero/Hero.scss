@@ -1,4 +1,4 @@
-@import "../../generals";
+@import '../../generals';
 .hero {
   animation: fadeInRight 2s ease;
   color: $mainColor;
@@ -31,6 +31,12 @@
   }
 
   @media screen and (max-height: 600px) {
+    & {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
     & {
       font-size: 10px;
     }

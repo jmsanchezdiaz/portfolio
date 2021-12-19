@@ -1,9 +1,11 @@
-import "./ContactMe.scss";
-import { sendForm } from "emailjs-com";
-import { useState } from "react";
-import Form from "../Form/Form";
+import './ContactMe.scss';
+import { sendForm } from 'emailjs-com';
+import { useState } from 'react';
+import Form from '../Form/Form';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const ContactMe = () => {
+  const { isDarkModeOn, colors } = useSpreadContext();
   const [wasError, setWasError] = useState(false);
   const [wasSend, setWasSend] = useState(false);
 
@@ -25,17 +27,34 @@ const ContactMe = () => {
   };
 
   return (
-    <section id="Contactame" className="contactame">
+    <section
+      style={{
+        backgroundColor: isDarkModeOn ? colors.sunMainColor : '#fff',
+        color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor,
+      }}
+      id="Contactame"
+      className="contactame"
+    >
       <div className="email">
         <Form sendEmail={sendEmail} />
       </div>
 
       {wasSend ? (
-        <h2 className="contactame__msg">
+        <h2
+          style={{
+            color: 'rgb(130, 242, 106)',
+          }}
+          className="contactame__msg"
+        >
           MENSAJE ENVIADO, PRONTO TE RESPONDERE. 🧾
         </h2>
       ) : wasError ? (
-        <h2 className="contactame__msg-error">
+        <h2
+          style={{
+            color: '#f00',
+          }}
+          className="contactame__msg-error"
+        >
           HA OCURRIDO UN ERROR, VUELVA A INTENTAR. ❌
         </h2>
       ) : (
