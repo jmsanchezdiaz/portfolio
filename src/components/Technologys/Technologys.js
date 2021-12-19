@@ -6,12 +6,10 @@ import JavascriptIcon from '../../static/icons/javascript-original.svg';
 import TypescriptIcon from '../../static/icons/typescript-original.svg';
 import ReactJSIcon from '../../static/icons/react-original.svg';
 import PostgresIcon from '../../static/icons/postgresql-original.svg';
-import { useContext } from 'react';
-import { DarkModeContext } from '../../Context/DarkModeContext';
-import { colors } from '../../colors';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const Technologys = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   return (
     <section
       style={{

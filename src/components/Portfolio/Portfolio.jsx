@@ -1,6 +1,5 @@
-import React, { useContext } from 'react';
-import { colors } from '../../colors';
-import { DarkModeContext } from '../../Context/DarkModeContext';
+import React from 'react';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 import AboutMe from '../AboutMe/AboutMe';
 import ContactMe from '../ContactMe/ContactMe';
 import Footer from '../Footer/Footer';
@@ -11,7 +10,7 @@ import Technologys from '../Technologys/Technologys';
 import VisibleElement from '../VisibleElement/VisibleElement';
 
 const Portfolio = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   return (
     <div
       className="portfolio"

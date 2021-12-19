@@ -1,0 +1,14 @@
+figure {
+  display: none;
+
+  svg {
+    cursor: pointer;
+    width: 3rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  figure {
+    display: block;
+  }
+}

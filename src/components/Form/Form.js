@@ -1,10 +1,8 @@
-import React, { useContext } from 'react';
-import { colors } from '../../colors';
-import { DarkModeContext } from '../../Context/DarkModeContext';
 import { useForm } from '../../customHooks/useForm';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const Form = ({ sendEmail }) => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   const {
     formValues,
     email_address,

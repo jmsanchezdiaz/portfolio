@@ -1,14 +1,13 @@
 import React from 'react';
-import { colors } from '../../colors';
+import './MenuButton.scss';
 
-const MenuButton = ({ openMenu, isDarkModeOn }) => {
+const MenuButton = ({ openMenu, isDarkModeOn, colors }) => {
   return (
     <figure onClick={openMenu}>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
         fill="#000000"
-        className="navbar__bars"
       >
         <path
           d="M0 0h24v24H0V0z"

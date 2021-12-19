@@ -1,12 +1,11 @@
 import './ContactMe.scss';
 import { sendForm } from 'emailjs-com';
-import { useContext, useState } from 'react';
+import { useState } from 'react';
 import Form from '../Form/Form';
-import { colors } from '../../colors';
-import { DarkModeContext } from '../../Context/DarkModeContext';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const ContactMe = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   const [wasError, setWasError] = useState(false);
   const [wasSend, setWasSend] = useState(false);
 

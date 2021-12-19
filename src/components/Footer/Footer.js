@@ -1,11 +1,9 @@
 import './Footer.scss';
 import myResumePDF from '../../static/JMSANCHEZDIAZCV.pdf';
-import { useContext } from 'react';
-import { DarkModeContext } from '../../Context/DarkModeContext';
-import { colors } from '../../colors';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const Footer = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   return (
     <footer
       className="footer"

@@ -8,13 +8,10 @@ import Typescript from '../../static/icons/typescript-original.svg';
 import Javascript from '../../static/icons/javascript-original.svg';
 import Sass from '../../static/icons/sass-original.svg';
 import Project from '../Project/Project';
-import { useContext } from 'react';
-import { DarkModeContext } from '../../Context/DarkModeContext';
-import { colors } from '../../colors';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const Projects = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
-
+  const { isDarkModeOn, colors } = useSpreadContext();
   return (
     <section
       style={{

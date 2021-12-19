@@ -1,11 +1,9 @@
-import React, { useContext } from 'react';
 import './AboutMe.scss';
 import Foto from '../../static/projects-imgs/FotoLinkedIn.jpg';
-import { DarkModeContext } from '../../Context/DarkModeContext';
-import { colors } from '../../colors';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const AboutMe = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   return (
     <section
       style={{

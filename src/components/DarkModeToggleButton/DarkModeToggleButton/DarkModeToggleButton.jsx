@@ -1,5 +1,4 @@
 import React from 'react';
-import { colors } from '../../../colors';
 
 const buttonStyle = {
   background: 'none',
@@ -8,7 +7,7 @@ const buttonStyle = {
   width: '2rem',
 };
 
-const DarkModeToggleButton = ({ isDarkModeOn, toggleDarkMode }) => {
+const DarkModeToggleButton = ({ isDarkModeOn, toggleDarkMode, colors }) => {
   return (
     <button style={buttonStyle} className="icon" onClick={toggleDarkMode}>
       {isDarkModeOn ? (

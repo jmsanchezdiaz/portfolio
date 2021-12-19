@@ -1,12 +1,10 @@
 import './Hero.scss';
 import Github from '../../static/icons/github-original.svg';
 import LinkedIn from '../../static/icons/linkedin-original.svg';
-import React, { useContext } from 'react';
-import { DarkModeContext } from '../../Context/DarkModeContext';
-import { colors } from '../../colors';
+import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const Hero = () => {
-  const { isDarkModeOn } = useContext(DarkModeContext);
+  const { isDarkModeOn, colors } = useSpreadContext();
   return (
     <main
       className="hero"
