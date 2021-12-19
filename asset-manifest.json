@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ad0a03d9.chunk.css",
-    "main.js": "/portfolio/static/js/main.387a3e27.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.387a3e27.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.206ec3cc.chunk.css",
+    "main.js": "/portfolio/static/js/main.d185a43f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.d185a43f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
     "static/js/2.6fee871f.chunk.js": "/portfolio/static/js/2.6fee871f.chunk.js",
     "static/js/2.6fee871f.chunk.js.map": "/portfolio/static/js/2.6fee871f.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.ad0a03d9.chunk.css.map": "/portfolio/static/css/main.ad0a03d9.chunk.css.map",
+    "static/css/main.206ec3cc.chunk.css.map": "/portfolio/static/css/main.206ec3cc.chunk.css.map",
     "static/js/2.6fee871f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6fee871f.chunk.js.LICENSE.txt",
     "static/media/AerolabImg.aeaadf2e.jpg": "/portfolio/static/media/AerolabImg.aeaadf2e.jpg",
     "static/media/FotoLinkedIn.c3b1a425.jpg": "/portfolio/static/media/FotoLinkedIn.c3b1a425.jpg",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.6fee871f.chunk.js",
-    "static/css/main.ad0a03d9.chunk.css",
-    "static/js/main.387a3e27.chunk.js"
+    "static/css/main.206ec3cc.chunk.css",
+    "static/js/main.d185a43f.chunk.js"
   ]
 }
