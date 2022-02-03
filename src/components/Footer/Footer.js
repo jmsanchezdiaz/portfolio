@@ -1,5 +1,5 @@
 import './Footer.scss';
-import myResumePDF from '../../static/JMSANCHEZDIAZCV.pdf';
+import myResumePDF from '../../static/CV.pdf';
 import { useSpreadContext } from '../../customHooks/useSpreadContext';
 import PersonalLogo from '../UI Components/PersonalLogo/PersonalLogo';
 
@@ -10,23 +10,21 @@ const Footer = () => {
   };
   return (
     <footer
-      className="footer"
+      className='footer'
       style={{
         color: isDarkModeOn ? colors.moonMainColor : '#fff',
         backgroundColor: isDarkModeOn
           ? colors.moonBkgColor
           : colors.sunMainColor,
-      }}
-    >
-      <span className="footer__copy"> 2021 © Juan Manuel Sanchez Diaz</span>
+      }}>
+      <span className='footer__copy'> 2021 © Juan Manuel Sanchez Diaz</span>
 
       <figure
         onClick={() => window.scrollTo(0, 0)}
         style={{
           backgroundColor: isDarkModeOn ? colors.moonMainColor : '#fff',
           borderRadius: '100%',
-        }}
-      >
+        }}>
         <PersonalLogo
           isDarkModeOn={isDarkModeOn}
           colors={colors}
@@ -34,35 +32,32 @@ const Footer = () => {
         />
       </figure>
 
-      <ul className="footer__links">
+      <ul className='footer__links'>
         <li>
           <a
             style={correspondingStyle}
-            rel="noreferrer"
-            target="_blank"
-            href="https://www.linkedin.com/in/juan-manuel-sanchez-diaz-1bb0661bb/"
-          >
+            rel='noreferrer'
+            target='_blank'
+            href='https://www.linkedin.com/in/juan-manuel-sanchez-diaz-1bb0661bb/'>
             LinkedIn
           </a>
         </li>
         <li>
           <a
             style={correspondingStyle}
-            rel="noreferrer"
-            target="_blank"
-            href="https://github.com/jmsanchezdiaz"
-          >
+            rel='noreferrer'
+            target='_blank'
+            href='https://github.com/jmsanchezdiaz'>
             Github
           </a>
         </li>
         <li>
           <a
             style={correspondingStyle}
-            rel="noreferrer"
-            target="_blank"
+            rel='noreferrer'
+            target='_blank'
             href={myResumePDF}
-            download
-          >
+            download>
             Resume
           </a>
         </li>
