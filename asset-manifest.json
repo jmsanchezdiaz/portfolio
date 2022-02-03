@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.206ec3cc.chunk.css",
-    "main.js": "/portfolio/static/js/main.192559ef.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.192559ef.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.adaff6a8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.adaff6a8.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
     "static/js/2.6fee871f.chunk.js": "/portfolio/static/js/2.6fee871f.chunk.js",
@@ -12,9 +12,9 @@
     "static/js/2.6fee871f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6fee871f.chunk.js.LICENSE.txt",
     "static/media/AerolabImg.aeaadf2e.jpg": "/portfolio/static/media/AerolabImg.aeaadf2e.jpg",
     "static/media/AlkemyChallenge.0e747646.png": "/portfolio/static/media/AlkemyChallenge.0e747646.png",
+    "static/media/CV.69a83afa.pdf": "/portfolio/static/media/CV.69a83afa.pdf",
     "static/media/FotoLinkedIn.c3b1a425.jpg": "/portfolio/static/media/FotoLinkedIn.c3b1a425.jpg",
     "static/media/GiphargImg.8b8d62a9.png": "/portfolio/static/media/GiphargImg.8b8d62a9.png",
-    "static/media/JMSANCHEZDIAZCV.24fb9195.pdf": "/portfolio/static/media/JMSANCHEZDIAZCV.24fb9195.pdf",
     "static/media/RestCountriesApp.db6db3c0.jpg": "/portfolio/static/media/RestCountriesApp.db6db3c0.jpg",
     "static/media/bars-menu.9dbc5a3a.svg": "/portfolio/static/media/bars-menu.9dbc5a3a.svg",
     "static/media/css3-original.39769a8b.svg": "/portfolio/static/media/css3-original.39769a8b.svg",
@@ -34,6 +34,6 @@
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.6fee871f.chunk.js",
     "static/css/main.206ec3cc.chunk.css",
-    "static/js/main.192559ef.chunk.js"
+    "static/js/main.adaff6a8.chunk.js"
   ]
 }
