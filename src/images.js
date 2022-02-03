@@ -1,19 +1,26 @@
-import HtmlIcon from './static/icons/html5-original.svg';
-import Css3Icon from './static/icons/css3-original.svg';
-import SassIcon from './static/icons/sass-original.svg';
-import JavascriptIcon from './static/icons/javascript-original.svg';
-import TypescriptIcon from './static/icons/typescript-original.svg';
-import ReactJSIcon from './static/icons/react-original.svg';
-import PostgresIcon from './static/icons/postgresql-original.svg';
+import {
+  Css3,
+  Html,
+  Javascript,
+  Postgres,
+  ReactJS,
+  Sass,
+  Typescript,
+} from './icons';
+import RestApp from './static/projects-imgs/RestCountriesApp.jpg';
+import FotoLinkedin from './static/projects-imgs/FotoLinkedIn.jpg';
+import Gipharg from './static/projects-imgs/GiphargImg.png';
+import Aerolab from './static/projects-imgs/AerolabImg.jpg';
+import AlkemyChallenge from './static/projects-imgs/AlkemyChallenge.png';
 
-const imgs = [
-  { src: HtmlIcon, alt: 'html photo', label: 'HTML' },
-  { src: Css3Icon, alt: 'css photo', label: 'CSS3' },
-  { src: SassIcon, alt: 'sass photo', label: 'SASS' },
-  { src: JavascriptIcon, alt: 'javascript photo', label: 'JAVASCRIPT' },
-  { src: TypescriptIcon, alt: 'typescript photo', label: 'TYPESCRIPT' },
-  { src: ReactJSIcon, alt: 'react js photo', label: 'REACT JS' },
-  { src: PostgresIcon, alt: 'postgres photo', label: 'POSTGRES SQL' },
+export const technologies = [
+  { src: Html, alt: 'html photo', label: 'HTML' },
+  { src: Css3, alt: 'css photo', label: 'CSS3' },
+  { src: Sass, alt: 'sass photo', label: 'SASS' },
+  { src: Javascript, alt: 'javascript photo', label: 'JAVASCRIPT' },
+  { src: Typescript, alt: 'typescript photo', label: 'TYPESCRIPT' },
+  { src: ReactJS, alt: 'react js photo', label: 'REACT JS' },
+  { src: Postgres, alt: 'postgres photo', label: 'POSTGRES SQL' },
   {
     src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg',
     alt: 'jest photo',
@@ -26,4 +33,34 @@ const imgs = [
   },
 ];
 
-export default imgs;
+export const projects = [
+  {
+    src: RestApp,
+    repoName: 'rest-countries-app',
+    alt: 'rest countries app project',
+    projectName: 'REST COUNTRIES APP',
+    technologiesImgs: [ReactJS, Typescript, Sass],
+  },
+  {
+    projectName: 'HEROES APP ALKEMY',
+    src: AlkemyChallenge,
+    repoName: 'heroes-app-alkemy',
+    alt: 'alkemy heroes app project',
+    technologiesImgs: [ReactJS, Typescript, Sass],
+  },
+  {
+    projectName: 'GIPHARG',
+    src: Gipharg,
+    repoName: 'gipharg',
+    technologiesImgs: [ReactJS, Typescript, Sass],
+    alt: 'giphy app project',
+  },
+  {
+    src: Aerolab,
+    projectName: 'AEROLAB',
+    repoName: 'aerolab-challenge',
+    alt: 'products ecommerce aerolab project',
+    technologiesImgs: [ReactJS, Typescript, Sass],
+  },
+];
+export const photo = { src: FotoLinkedin, alt: 'foto de mi persona' };

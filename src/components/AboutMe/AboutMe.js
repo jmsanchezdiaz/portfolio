@@ -1,5 +1,5 @@
 import './AboutMe.scss';
-import Foto from '../../static/projects-imgs/FotoLinkedIn.jpg';
+import { photo } from '../../images';
 import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const AboutMe = () => {
@@ -9,15 +9,13 @@ const AboutMe = () => {
       style={{
         background: isDarkModeOn ? colors.moonBkgColor : colors.sunMainColor,
       }}
-      id="SobreMi"
-      className="sobre-mi box-item"
-    >
-      <div className="sobre-mi__text">
+      id='SobreMi'
+      className='sobre-mi box-item'>
+      <div className='sobre-mi__text'>
         <h2
           style={{
             color: isDarkModeOn ? colors.moonMainColor : '#fff',
-          }}
-        >
+          }}>
           SOBRE MÍ
         </h2>
         <p>
@@ -27,8 +25,8 @@ const AboutMe = () => {
           gustaría poder adquirir más conocimientos sobre otras areas.
         </p>
       </div>
-      <figure className="sobre-mi__img-container">
-        <img src={Foto} alt="FOTO DE PERFIL" />
+      <figure className='sobre-mi__img-container'>
+        <img src={photo.src} alt={photo.alt} />
       </figure>
     </section>
   );
