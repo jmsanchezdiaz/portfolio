@@ -10,6 +10,9 @@
 
 # production
 /build
+/src/static/carta para presentacion de cv.docx
+/src/static/CoverLetter.docx
+/src/static/CoverLetter.pdf
 
 # misc
 .DS_Store
