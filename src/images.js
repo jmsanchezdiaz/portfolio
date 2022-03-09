@@ -8,6 +8,7 @@ import {
   NextJS,
   ChakraUI,
   Typescript,
+  Bootstrap,
 } from './icons';
 import RestApp from './static/projects-imgs/RestCountriesApp.jpg';
 import FotoLinkedin from './static/projects-imgs/FotoLinkedIn.jpg';
@@ -41,15 +42,16 @@ export const technologies = [
     label: 'FIREBASE',
   },
   {
-    src: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg',
+    src: NextJS,
     label: 'NEXT.JS',
     alt: 'next js photo',
   },
   {
-    src: 'https://avatars.githubusercontent.com/u/54212428?s=280&v=4',
+    src: ChakraUI,
     label: 'CHAKRA UI',
     alt: 'Chakra ui photo',
   },
+  { src: Bootstrap, label: 'BOOTSTRAP', alt: 'Bootstrap photo' },
 ];
 
 export const projects = [
@@ -67,7 +69,7 @@ export const projects = [
     repoName: 'heroes-app-alkemy',
     url: 'https://jmsanchezdiaz.github.io/heroes-app-alkemy',
     alt: 'alkemy heroes app project',
-    technologiesImgs: [ReactJS, Typescript, Sass],
+    technologiesImgs: [ReactJS, Typescript, Bootstrap],
   },
   {
     projectName: 'GIPHARG',

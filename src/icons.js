@@ -17,7 +17,11 @@ const NextJS =
 
 const ChakraUI = 'https://avatars.githubusercontent.com/u/54212428?s=280&v=4';
 
+const Bootstrap =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg';
+
 export {
+  Bootstrap,
   NextJS,
   ChakraUI,
   Html,
