@@ -23,7 +23,8 @@ const Projects = () => {
             imgUrl={project.src}
             projectName={project.projectName}
             repoName={project.repoName}
-            technologiesImgs={project.technologies}
+            url={project.url}
+            technologiesImgs={project.technologiesImgs}
           />
         ))}
       </div>

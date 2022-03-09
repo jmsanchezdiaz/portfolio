@@ -19,10 +19,20 @@ const AboutMe = () => {
           SOBRE MÍ
         </h2>
         <p>
-          Soy un estudiante de Licenciatura en Informática en la Universidad
-          Nacional de Quilmes, actualmente me encuentro en el area del
-          desarrollo web, especificamente Front End. Aunque en un futuro me
-          gustaría poder adquirir más conocimientos sobre otras areas.
+          Hola 👋, soy Juanma! Soy un desarrollador frontend autodidacta de
+          Wilde, Argentina, amo aprender nuevas tecnologías y el trabajo en
+          equipo. Ademas de mi camino como Frontend, me encuentro estudiando la
+          Licenciatura en Informatica de la{' '}
+          <a
+            style={{
+              color: isDarkModeOn ? colors.moonMainColor : colors.sunThirdColor,
+            }}
+            href='http://www.unq.edu.ar/'
+            target='_blank'
+            rel='noreferrer'>
+            Universidad Nacional De Quilmes
+          </a>
+          .
         </p>
       </div>
       <figure className='sobre-mi__img-container'>

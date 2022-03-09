@@ -12,7 +12,14 @@ import Moon from './static/icons/moon-regular.svg';
 import LinkedIn from './static/icons/linkedin-original.svg';
 import BarsMenu from './static/icons/bars-menu.svg';
 
+const NextJS =
+  'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg';
+
+const ChakraUI = 'https://avatars.githubusercontent.com/u/54212428?s=280&v=4';
+
 export {
+  NextJS,
+  ChakraUI,
   Html,
   Css3,
   Sass,
