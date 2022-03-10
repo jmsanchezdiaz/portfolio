@@ -27,7 +27,7 @@
       img {
         display: block;
         max-width: 8rem;
-        min-height: 8rem;
+        height: 8rem;
         transition: transform 500ms ease;
       }
 
@@ -60,8 +60,8 @@
           gap: 0.25rem;
 
           img {
-            max-width: 5rem;
-            max-height: 5rem;
+            width: 5rem;
+            height: 5rem;
           }
         }
       }
