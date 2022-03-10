@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.78ad11b0.chunk.css",
+    "main.css": "/portfolio/static/css/main.ca8aa3d4.chunk.css",
     "main.js": "/portfolio/static/js/main.a5a2400b.chunk.js",
     "main.js.map": "/portfolio/static/js/main.a5a2400b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
@@ -8,7 +8,7 @@
     "static/js/2.6fee871f.chunk.js": "/portfolio/static/js/2.6fee871f.chunk.js",
     "static/js/2.6fee871f.chunk.js.map": "/portfolio/static/js/2.6fee871f.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.78ad11b0.chunk.css.map": "/portfolio/static/css/main.78ad11b0.chunk.css.map",
+    "static/css/main.ca8aa3d4.chunk.css.map": "/portfolio/static/css/main.ca8aa3d4.chunk.css.map",
     "static/js/2.6fee871f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6fee871f.chunk.js.LICENSE.txt",
     "static/media/AerolabImg.aeaadf2e.jpg": "/portfolio/static/media/AerolabImg.aeaadf2e.jpg",
     "static/media/AlkemyChallenge.0e747646.png": "/portfolio/static/media/AlkemyChallenge.0e747646.png",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.6fee871f.chunk.js",
-    "static/css/main.78ad11b0.chunk.css",
+    "static/css/main.ca8aa3d4.chunk.css",
     "static/js/main.a5a2400b.chunk.js"
   ]
 }
