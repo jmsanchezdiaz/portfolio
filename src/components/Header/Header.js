@@ -8,39 +8,9 @@ import PersonalLogo from '../UI Components/PersonalLogo/PersonalLogo';
 
 const Header = () => {
   const { isDarkModeOn, colors, toggleDarkMode } = useSpreadContext();
-  const [isScrolling, setIsScrolling] = useState(false);
+  const [isScrolling, setIsScrolling] = useState(window.scrollY !== 0);
   const [isOpen, setIsOpen] = useState(false);
   const [isMobileView, setIsMobileView] = useState(window.innerWidth < 630);
-
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 630) setIsMobileView(true);
-      else setIsMobileView(false);
-      setIsOpen(false);
-    };
-
-    handleResize();
-    window.addEventListener('load', handleResize);
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('load', handleResize);
-      window.removeEventListener('resize', handleResize);
-    };
-  }, [isMobileView]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const curScroll = window.scrollY;
-
-      if (curScroll !== 0) setIsScrolling(true);
-      else setIsScrolling(false);
-    };
-    handleScroll();
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [isScrolling]);
-
   const closeMenu = () => setIsOpen(false);
 
   const openMenu = () => {
@@ -48,6 +18,29 @@ const Header = () => {
       setIsOpen(!isOpen);
     }
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth < 630);
+      closeMenu();
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [isMobileView]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const curScroll = window.scrollY;
+      setIsScrolling(curScroll !== 0);
+    };
+    handleScroll();
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [isScrolling]);
 
   return (
     <header

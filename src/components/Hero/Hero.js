@@ -1,5 +1,5 @@
 import './Hero.scss';
-import { Github, LinkedIn } from '../../icons';
+import { LinkedIn } from '../../icons';
 import { useSpreadContext } from '../../customHooks/useSpreadContext';
 
 const Hero = () => {
@@ -9,19 +9,19 @@ const Hero = () => {
       className='hero'
       style={{
         backgroundColor: isDarkModeOn ? colors.sunBkgColor : '#fff',
-        color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor,
+        color: isDarkModeOn ? colors.moonMainColor : colors.sunMainColor
       }}>
       <div className='hero__text'>
         <h1>Bienvenido a mi portfolio! </h1>
         <h3
           style={{
-            color: isDarkModeOn ? '#fff' : colors.sunThirdColor,
+            color: isDarkModeOn ? '#fff' : colors.sunThirdColor
           }}>
           Mi nombre es Juan Manuel Sanchez Diaz
         </h3>
         <h3
           style={{
-            color: isDarkModeOn ? '#fff' : colors.sunThirdColor,
+            color: isDarkModeOn ? '#fff' : colors.sunThirdColor
           }}>
           Soy un Desarollador Front End.
         </h3>
@@ -30,7 +30,6 @@ const Hero = () => {
             rel='noreferrer'
             target='_blank'
             href='https://github.com/jmsanchezdiaz'>
-            <image src={Github} alt='github-logo' />
             <svg
               xmlns='http://www.w3.org/2000/svg'
               className='hero__icon'
@@ -38,7 +37,7 @@ const Hero = () => {
               <svg fill='#181616'>
                 <path
                   style={{
-                    fill: isDarkModeOn ? '#fff' : colors.sunMainColor,
+                    fill: isDarkModeOn ? '#fff' : colors.sunMainColor
                   }}
                   fillRule='evenodd'
                   clipRule='evenodd'
