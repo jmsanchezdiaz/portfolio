@@ -10,7 +10,7 @@ const Header = () => {
   const { isDarkModeOn, colors, toggleDarkMode } = useSpreadContext();
   const [isScrolling, setIsScrolling] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth < 630);
 
   useEffect(() => {
     const handleResize = () => {
@@ -53,10 +53,9 @@ const Header = () => {
     <header
       style={{
         backgroundColor: isDarkModeOn ? colors.moonBkgColor : '#fff',
-        boxShadow: !isScrolling ? 'none' : '0px 1px 2px rgba(0,0,0,0.150)',
+        boxShadow: !isScrolling ? 'none' : '0px 1px 2px rgba(0,0,0,0.150)'
       }}
-      className="header"
-    >
+      className='header'>
       <PersonalLogo isDarkModeOn={isDarkModeOn} colors={colors} />
 
       <Navbar
@@ -65,7 +64,7 @@ const Header = () => {
         isMobileView={isMobileView}
       />
 
-      <div className="icon-group">
+      <div className='icon-group'>
         <DarkModeToggleButton
           colors={colors}
           toggleDarkMode={toggleDarkMode}
