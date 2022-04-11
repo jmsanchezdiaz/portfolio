@@ -7,14 +7,14 @@ const AboutMe = () => {
   return (
     <section
       style={{
-        background: isDarkModeOn ? colors.moonBkgColor : colors.sunMainColor,
+        background: isDarkModeOn ? colors.moonBkgColor : colors.sunMainColor
       }}
       id='SobreMi'
       className='sobre-mi box-item'>
       <div className='sobre-mi__text'>
         <h2
           style={{
-            color: isDarkModeOn ? colors.moonMainColor : '#fff',
+            color: isDarkModeOn ? colors.moonMainColor : '#fff'
           }}>
           SOBRE MÍ
         </h2>
@@ -25,7 +25,7 @@ const AboutMe = () => {
           Licenciatura en Informatica de la{' '}
           <a
             style={{
-              color: isDarkModeOn ? colors.moonMainColor : colors.sunThirdColor,
+              color: isDarkModeOn ? colors.moonMainColor : colors.sunThirdColor
             }}
             href='http://www.unq.edu.ar/'
             target='_blank'
