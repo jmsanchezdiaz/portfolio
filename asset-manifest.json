@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ca8aa3d4.chunk.css",
-    "main.js": "/portfolio/static/js/main.568420d6.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.568420d6.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.f3ea326f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.f3ea326f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
     "static/js/2.6fee871f.chunk.js": "/portfolio/static/js/2.6fee871f.chunk.js",
@@ -24,11 +24,11 @@
     "static/media/html5-original.8664168d.svg": "/portfolio/static/media/html5-original.8664168d.svg",
     "static/media/javascript-original.4c1b5332.svg": "/portfolio/static/media/javascript-original.4c1b5332.svg",
     "static/media/linkedin-original.15f03370.svg": "/portfolio/static/media/linkedin-original.15f03370.svg",
+    "static/media/mercadolibre.e8a955fb.png": "/portfolio/static/media/mercadolibre.e8a955fb.png",
     "static/media/moon-regular.9e498298.svg": "/portfolio/static/media/moon-regular.9e498298.svg",
     "static/media/postgresql-original.7bc394e8.svg": "/portfolio/static/media/postgresql-original.7bc394e8.svg",
     "static/media/react-original.4e0c9700.svg": "/portfolio/static/media/react-original.4e0c9700.svg",
     "static/media/sass-original.fb123914.svg": "/portfolio/static/media/sass-original.fb123914.svg",
-    "static/media/softvision.1dae7edd.png": "/portfolio/static/media/softvision.1dae7edd.png",
     "static/media/sun-regular.fa0bdb5b.svg": "/portfolio/static/media/sun-regular.fa0bdb5b.svg",
     "static/media/typescript-original.8d9549db.svg": "/portfolio/static/media/typescript-original.8d9549db.svg"
   },
@@ -36,6 +36,6 @@
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.6fee871f.chunk.js",
     "static/css/main.ca8aa3d4.chunk.css",
-    "static/js/main.568420d6.chunk.js"
+    "static/js/main.f3ea326f.chunk.js"
   ]
 }
