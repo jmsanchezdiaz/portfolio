@@ -33,6 +33,11 @@ const Navbar = ({ closeMenu, isMobileView, isOpen }) => {
           </a>
         </li>
         <li>
+          <a style={correspondingAnchorStyle} href="#Experiencia">
+            Contactame
+          </a>
+        </li>
+        <li>
           <a style={correspondingAnchorStyle} href="#Tecnologias">
             Tecnologias
           </a>
@@ -40,11 +45,6 @@ const Navbar = ({ closeMenu, isMobileView, isOpen }) => {
         <li>
           <a style={correspondingAnchorStyle} href="#Proyectos">
             Proyectos
-          </a>
-        </li>
-        <li>
-          <a style={correspondingAnchorStyle} href="#Contactame">
-            Contactame
           </a>
         </li>
       </ul>
