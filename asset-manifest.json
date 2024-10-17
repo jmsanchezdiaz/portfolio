@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.20781630.chunk.css",
+    "main.js": "/portfolio/static/js/main.feeee488.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.feeee488.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
+    "static/js/2.fcc8ddf8.chunk.js": "/portfolio/static/js/2.fcc8ddf8.chunk.js",
+    "static/js/2.fcc8ddf8.chunk.js.map": "/portfolio/static/js/2.fcc8ddf8.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/main.20781630.chunk.css.map": "/portfolio/static/css/main.20781630.chunk.css.map",
+    "static/js/2.fcc8ddf8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fcc8ddf8.chunk.js.LICENSE.txt",
+    "static/media/AerolabImg.aeaadf2e.jpg": "/portfolio/static/media/AerolabImg.aeaadf2e.jpg",
+    "static/media/AlkemyChallenge.0e747646.png": "/portfolio/static/media/AlkemyChallenge.0e747646.png",
+    "static/media/CV.1a1f74ed.pdf": "/portfolio/static/media/CV.1a1f74ed.pdf",
+    "static/media/FotoLinkedIn.c27178c5.webp": "/portfolio/static/media/FotoLinkedIn.c27178c5.webp",
+    "static/media/GiphargImg.8b8d62a9.png": "/portfolio/static/media/GiphargImg.8b8d62a9.png",
+    "static/media/RestCountriesApp.db6db3c0.jpg": "/portfolio/static/media/RestCountriesApp.db6db3c0.jpg",
+    "static/media/bars-menu.9dbc5a3a.svg": "/portfolio/static/media/bars-menu.9dbc5a3a.svg",
+    "static/media/blog-personal.571183b2.png": "/portfolio/static/media/blog-personal.571183b2.png",
+    "static/media/css3-original.39769a8b.svg": "/portfolio/static/media/css3-original.39769a8b.svg",
+    "static/media/github-original.3c903c66.svg": "/portfolio/static/media/github-original.3c903c66.svg",
+    "static/media/google-original.80f0af23.svg": "/portfolio/static/media/google-original.80f0af23.svg",
+    "static/media/html5-original.8664168d.svg": "/portfolio/static/media/html5-original.8664168d.svg",
+    "static/media/javascript-original.4c1b5332.svg": "/portfolio/static/media/javascript-original.4c1b5332.svg",
+    "static/media/linkedin-original.15f03370.svg": "/portfolio/static/media/linkedin-original.15f03370.svg",
+    "static/media/mercadolibre.e8a955fb.png": "/portfolio/static/media/mercadolibre.e8a955fb.png",
+    "static/media/moon-regular.9e498298.svg": "/portfolio/static/media/moon-regular.9e498298.svg",
+    "static/media/postgresql-original.7bc394e8.svg": "/portfolio/static/media/postgresql-original.7bc394e8.svg",
+    "static/media/react-original.4e0c9700.svg": "/portfolio/static/media/react-original.4e0c9700.svg",
+    "static/media/sass-original.fb123914.svg": "/portfolio/static/media/sass-original.fb123914.svg",
+    "static/media/sun-regular.fa0bdb5b.svg": "/portfolio/static/media/sun-regular.fa0bdb5b.svg",
+    "static/media/typescript-original.8d9549db.svg": "/portfolio/static/media/typescript-original.8d9549db.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ea5b019.js",
+    "static/js/2.fcc8ddf8.chunk.js",
+    "static/css/main.20781630.chunk.css",
+    "static/js/main.feeee488.chunk.js"
+  ]
+}
