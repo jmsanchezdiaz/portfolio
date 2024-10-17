@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.20781630.chunk.css",
-    "main.js": "/portfolio/static/js/main.feeee488.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.feeee488.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.6bd5d589.chunk.css",
+    "main.js": "/portfolio/static/js/main.c35b7c47.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.c35b7c47.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5ea5b019.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5ea5b019.js.map",
     "static/js/2.fcc8ddf8.chunk.js": "/portfolio/static/js/2.fcc8ddf8.chunk.js",
     "static/js/2.fcc8ddf8.chunk.js.map": "/portfolio/static/js/2.fcc8ddf8.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.20781630.chunk.css.map": "/portfolio/static/css/main.20781630.chunk.css.map",
+    "static/css/main.6bd5d589.chunk.css.map": "/portfolio/static/css/main.6bd5d589.chunk.css.map",
     "static/js/2.fcc8ddf8.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fcc8ddf8.chunk.js.LICENSE.txt",
     "static/media/AerolabImg.aeaadf2e.jpg": "/portfolio/static/media/AerolabImg.aeaadf2e.jpg",
     "static/media/AlkemyChallenge.0e747646.png": "/portfolio/static/media/AlkemyChallenge.0e747646.png",
@@ -35,7 +35,7 @@
   "entrypoints": [
     "static/js/runtime-main.5ea5b019.js",
     "static/js/2.fcc8ddf8.chunk.js",
-    "static/css/main.20781630.chunk.css",
-    "static/js/main.feeee488.chunk.js"
+    "static/css/main.6bd5d589.chunk.css",
+    "static/js/main.c35b7c47.chunk.js"
   ]
 }
