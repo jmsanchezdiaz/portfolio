@@ -7,6 +7,7 @@ import Hero from "../Hero/Hero";
 import Projects from "../Projects/Projects";
 import Technologys from "../Technologys/Technologys";
 import VisibleElement from "../VisibleElement/VisibleElement";
+import Experience from "../Experience/Experience";
 
 const Portfolio = () => {
   const { isDarkModeOn, colors } = useSpreadContext();
@@ -17,6 +18,7 @@ const Portfolio = () => {
       <Header />
       <Hero />
       <VisibleElement children={<AboutMe />} />
+      <VisibleElement children={<Experience />} />
       <VisibleElement children={<Technologys />} />
       <VisibleElement children={<Projects />} />
       <Footer />
