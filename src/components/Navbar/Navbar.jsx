@@ -34,7 +34,7 @@ const Navbar = ({ closeMenu, isMobileView, isOpen }) => {
         </li>
         <li>
           <a style={correspondingAnchorStyle} href="#Experiencia">
-            Contactame
+            Experiencia
           </a>
         </li>
         <li>
